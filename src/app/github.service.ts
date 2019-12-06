@@ -12,4 +12,8 @@ export class GithubService {
   constructor(private _http:HttpClient) { 
 
   }
+  getUser(){
+
+    this._http.get("https://api.github.com/users/")
+  }
 }
